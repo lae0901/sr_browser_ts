@@ -1,13 +1,15 @@
-# tester repo
+# sr_browser_ts - common typescript code run from a browser
 
-## eventually create new package, sr_browser_ts.  Typescript functions designed to run from the browser. ( path functions that do not use path class, functions that do not use fs package. )
+* sr_core_ts contains common typescript functions. But it contains functions dependent on the node.js file system and path functions. sr_browser_ts is standalone typescript functions used by browser typescript code. 
+* primarily used by vscode extension webview code.
 
-## testing history
-* publish package to NPM does not include type declaration file.
+## path methods
+* dirName = path_dirName( filePath );
 
 ## publish instructions
 * increment version number in package.json
 * npm run build
+* npm run test
 * git add, commit, push to repo
 * npm publish
 * npm update in projects which use this package

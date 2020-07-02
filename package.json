@@ -1,0 +1,32 @@
+{
+  "name": "sr_browser_ts",
+  "version": "1.0.0",
+  "description": "common browser typescript functions",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "test": "node ./lib/tests/path_tests.js",
+    "build": "tsc"
+  },
+  "files": [
+    "/lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lae0901/sr_browser_ts.git"
+  },
+  "keywords": [],
+  "author": "Stephen Richter",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/lae0901/sr_browser_ts/issues"
+  },
+  "homepage": "https://github.com/lae0901/sr_browser_ts#readme",
+  "devDependencies": {
+    "sr_test_framework": "^1.0.0",
+    "tslint": "^5.20.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.9.2"
+  },
+  "dependencies": {}
+}
