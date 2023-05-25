@@ -1,7 +1,7 @@
 {
   "name": "sr_browser_ts",
-  "version": "1.0.1",
-  "type":"module",
+  "version": "1.0.2",
+  "type": "module",
   "description": "common browser typescript functions",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -29,5 +29,7 @@
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.9.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "sr_core_ts": "^1.46.76"
+  }
 }

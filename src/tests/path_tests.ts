@@ -1,5 +1,6 @@
 
-import { testResults_append, testResults_consoleLog, testResults_new, iTestResultItem } from 'sr_test_framework';
+import { testResults_append, iTestResultItem } from 'sr_core_ts';
+import { testResults_consoleLog, testResults_new } from 'sr_test_framework';
 import { path_dirName } from '../index.js' ;
 
 // run main function that is declared as async. 
@@ -26,9 +27,9 @@ function path_tests()
     const filePath = 'c:\\web\\tester\\index.ts' ;
     const dirName = path_dirName(filePath) ;
     if ( dirName == 'c:\\web\\tester')
-      testResults_append( results, `dirName: ${dirName}`, '', method ) ;
+      testResults_append( results, {desc:`dirName: ${dirName}`, method }) ;
     else
-      testResults_append( results, '', `unexpected dirName ${dirName}`, method) ;
+      testResults_append( results, { desc:`unexpected dirName ${dirName}`, method}) ;
   }
 
   return results ;
