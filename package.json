@@ -1,6 +1,7 @@
 {
   "name": "sr_browser_ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "type":"module",
   "description": "common browser typescript functions",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

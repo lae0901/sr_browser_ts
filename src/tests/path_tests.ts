@@ -1,6 +1,6 @@
 
 import { testResults_append, testResults_consoleLog, testResults_new, iTestResultItem } from 'sr_test_framework';
-import { path_dirName } from '../index' ;
+import { path_dirName } from '../index.js' ;
 
 // run main function that is declared as async. 
 async_main();
